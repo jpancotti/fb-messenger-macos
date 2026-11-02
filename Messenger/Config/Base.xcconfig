@@ -1,0 +1,10 @@
+// Default build configuration for open-source builds.
+// To sign with your own Apple Developer Team ID and custom bundle identifier prefix,
+// copy `Local.xcconfig.example` to `Local.xcconfig` in the repository root.
+
+BUNDLE_ID_PREFIX = com.fbmac
+DEVELOPMENT_TEAM =
+CODE_SIGN_STYLE = Automatic
+CODE_SIGN_IDENTITY = -
+
+#include? "../../Local.xcconfig"

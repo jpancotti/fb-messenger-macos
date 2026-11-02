@@ -1,0 +1,6 @@
+// Copy this file to `Local.xcconfig` (gitignored) to sign builds with your
+// own Apple Developer Team ID and custom bundle identifier prefix.
+
+BUNDLE_ID_PREFIX = com.yourname
+DEVELOPMENT_TEAM = YOUR_TEAM_ID
+CODE_SIGN_IDENTITY = Apple Development

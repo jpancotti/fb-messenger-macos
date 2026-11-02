@@ -1,0 +1,48 @@
+/* Scoped strictly to Messenger routes so login, 2FA, and checkpoint screens remain untouched */
+html[data-messenger-wrapper="fb-messages"],
+html[data-messenger-wrapper="fb-messages"].__fb-light-mode,
+html[data-messenger-wrapper="fb-messages"].__fb-dark-mode {
+    --header-height: 0px !important;
+    overscroll-behavior: none !important;
+}
+
+html[data-messenger-wrapper="messenger-dot-com"] {
+    overscroll-behavior: none !important;
+}
+
+html[data-messenger-wrapper="fb-messages"] body,
+html[data-messenger-wrapper="messenger-dot-com"] body {
+    overscroll-behavior: none !important;
+}
+
+/* Remove Facebook's global top navigation header on facebook.com/messages */
+html[data-messenger-wrapper="fb-messages"] [role="banner"] {
+    display: none !important;
+    height: 0px !important;
+    min-height: 0px !important;
+    overflow: hidden !important;
+}
+
+/* Hide redundant top-level Facebook loading header */
+html[data-messenger-wrapper="fb-messages"] h1.html-h1,
+html[data-messenger-wrapper="fb-messages"] .x1cvmir6 [data-visualcompletion="loading-state"] {
+    display: none !important;
+}
+
+/* Make room for inset macOS window traffic lights beside the "Chats" sidebar header */
+@media (min-width: 664px) {
+    html[data-messenger-wrapper="fb-messages"] [role="navigation"] header,
+    html[data-messenger-wrapper="messenger-dot-com"] [role="navigation"] header {
+        padding-left: 76px !important;
+        box-sizing: border-box !important;
+    }
+}
+
+/* In compact narrow-sidebar mode, push the icon rail below the macOS traffic lights */
+@media (max-width: 663px) {
+    html[data-messenger-wrapper="fb-messages"] [role="navigation"],
+    html[data-messenger-wrapper="messenger-dot-com"] [role="navigation"] {
+        padding-top: 28px !important;
+        box-sizing: border-box !important;
+    }
+}

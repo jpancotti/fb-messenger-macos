@@ -1,0 +1,18 @@
+# Build artifacts
+build/
+DerivedData/
+*.xcarchive
+*.app
+*.dSYM.zip
+*.dSYM
+
+# Xcode user-specific state
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+
+# Local signing overrides
+Local.xcconfig
+
+# macOS Finder metadata
+.DS_Store

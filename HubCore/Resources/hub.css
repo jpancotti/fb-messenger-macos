@@ -1,0 +1,19 @@
+/* Scoped strictly to active Marketplace / Groups routes so login, 2FA, and checkpoint pages stay untouched */
+html[data-hub-mode="active"],
+html[data-hub-mode="active"].__fb-light-mode,
+html[data-hub-mode="active"].__fb-dark-mode {
+    --header-height: 0px !important;
+}
+
+/* Strip Facebook's global top navigation bar (News Feed, Reels, Gaming, etc.) */
+html[data-hub-mode="active"] [role="banner"] {
+    display: none !important;
+    height: 0px !important;
+    min-height: 0px !important;
+    overflow: hidden !important;
+}
+
+/* Hide redundant top-level loading skeleton H1 */
+html[data-hub-mode="active"] h1.html-h1 {
+    display: none !important;
+}

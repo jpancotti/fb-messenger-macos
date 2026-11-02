@@ -1,0 +1,883 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A10000010000000000000001 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000010000000000000001 /* main.swift */; };
+		A10000020000000000000001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000020000000000000001 /* AppDelegate.swift */; };
+		A10000030000000000000001 /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000030000000000000001 /* MainMenu.swift */; };
+		A10000040000000000000001 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000040000000000000001 /* StatusBarController.swift */; };
+		A10000050000000000000001 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000050000000000000001 /* MainWindowController.swift */; };
+		A10000060000000000000001 /* PopupWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000060000000000000001 /* PopupWindowController.swift */; };
+		A10000070000000000000001 /* LoginWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000070000000000000001 /* LoginWindowController.swift */; };
+		A10000080000000000000001 /* NavigationPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000080000000000000001 /* NavigationPolicy.swift */; };
+		A10000090000000000000001 /* WebViewConfigurationFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000090000000000000001 /* WebViewConfigurationFactory.swift */; };
+		A100000A0000000000000001 /* MessengerWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000A0000000000000001 /* MessengerWebView.swift */; };
+		A100000B0000000000000001 /* MessengerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000B0000000000000001 /* MessengerViewController.swift */; };
+		A100000C0000000000000001 /* ChatPreviewParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000C0000000000000001 /* ChatPreviewParser.swift */; };
+		A100000D0000000000000001 /* BadgeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000D0000000000000001 /* BadgeController.swift */; };
+		A100000E0000000000000001 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000E0000000000000001 /* NotificationManager.swift */; };
+		A100000F0000000000000001 /* AppPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = A200000F0000000000000001 /* AppPreferences.swift */; };
+		A10000100000000000000001 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000100000000000000001 /* SettingsView.swift */; };
+		A10000110000000000000001 /* SettingsWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000110000000000000001 /* SettingsWindowController.swift */; };
+		A10000120000000000000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A20000120000000000000001 /* Assets.xcassets */; };
+		A10000130000000000000001 /* messenger.css in Resources */ = {isa = PBXBuildFile; fileRef = A20000130000000000000001 /* messenger.css */; };
+		A10000140000000000000001 /* preload.js in Resources */ = {isa = PBXBuildFile; fileRef = A20000140000000000000001 /* preload.js */; };
+		A10000150000000000000001 /* bridge.js in Resources */ = {isa = PBXBuildFile; fileRef = A20000150000000000000001 /* bridge.js */; };
+
+		/* Tests */
+		A10000200000000000000001 /* NavigationPolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000200000000000000001 /* NavigationPolicyTests.swift */; };
+		A10000210000000000000001 /* ChatPreviewParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000210000000000000001 /* ChatPreviewParserTests.swift */; };
+		A10000220000000000000001 /* BadgeControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000220000000000000001 /* BadgeControllerTests.swift */; };
+		A10000230000000000000001 /* HubNavigationPolicyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A20000230000000000000001 /* HubNavigationPolicyTests.swift */; };
+		A10000240000000000000001 /* HubAppProfile.swift in Tests */ = {isa = PBXBuildFile; fileRef = B20000010000000000000001 /* HubAppProfile.swift */; };
+		A10000250000000000000001 /* HubNavigationPolicy.swift in Tests */ = {isa = PBXBuildFile; fileRef = B20000020000000000000001 /* HubNavigationPolicy.swift */; };
+
+		/* Marketplace target build files */
+		B10000010000000000000001 /* HubAppProfile.swift in Marketplace */ = {isa = PBXBuildFile; fileRef = B20000010000000000000001 /* HubAppProfile.swift */; };
+		B10000020000000000000001 /* HubNavigationPolicy.swift in Marketplace */ = {isa = PBXBuildFile; fileRef = B20000020000000000000001 /* HubNavigationPolicy.swift */; };
+		B10000030000000000000001 /* HubPreferences.swift in Marketplace */ = {isa = PBXBuildFile; fileRef = B20000030000000000000001 /* HubPreferences.swift */; };
+		B10000040000000000000001 /* HubSettingsView.swift in Marketplace */ = {isa = PBXBuildFile; fileRef = B20000040000000000000001 /* HubSettingsView.swift */; };
+		B10000050000000000000001 /* HubPopupAndLoginWindows.swift in Marketplace */ = {isa = PBXBuildFile; fileRef = B20000050000000000000001 /* HubPopupAndLoginWindows.swift */; };
+		B10000060000000000000001 /* HubWebViewController.swift in Marketplace */ = {isa = PBXBuildFile; fileRef = B20000060000000000000001 /* HubWebViewController.swift */; };
+		B10000070000000000000001 /* HubMainWindowController.swift in Marketplace */ = {isa = PBXBuildFile; fileRef = B20000070000000000000001 /* HubMainWindowController.swift */; };
+		B10000080000000000000001 /* HubStatusBarController.swift in Marketplace */ = {isa = PBXBuildFile; fileRef = B20000080000000000000001 /* HubStatusBarController.swift */; };
+		B10000090000000000000001 /* HubMainMenu.swift in Marketplace */ = {isa = PBXBuildFile; fileRef = B20000090000000000000001 /* HubMainMenu.swift */; };
+		B100000A0000000000000001 /* HubAppDelegate.swift in Marketplace */ = {isa = PBXBuildFile; fileRef = B200000A0000000000000001 /* HubAppDelegate.swift */; };
+		B100000B0000000000000001 /* main.swift in Marketplace */ = {isa = PBXBuildFile; fileRef = C20000010000000000000001 /* main.swift */; };
+		B100000C0000000000000001 /* Assets.xcassets in Marketplace */ = {isa = PBXBuildFile; fileRef = C20000020000000000000001 /* Assets.xcassets */; };
+		B100000D0000000000000001 /* hub.css in Marketplace */ = {isa = PBXBuildFile; fileRef = B200000B0000000000000001 /* hub.css */; };
+		B100000E0000000000000001 /* hub_preload.js in Marketplace */ = {isa = PBXBuildFile; fileRef = B200000C0000000000000001 /* hub_preload.js */; };
+		B100000F0000000000000001 /* hub_bridge.js in Marketplace */ = {isa = PBXBuildFile; fileRef = B200000D0000000000000001 /* hub_bridge.js */; };
+
+		/* Groups target build files */
+		D10000010000000000000001 /* HubAppProfile.swift in Groups */ = {isa = PBXBuildFile; fileRef = B20000010000000000000001 /* HubAppProfile.swift */; };
+		D10000020000000000000001 /* HubNavigationPolicy.swift in Groups */ = {isa = PBXBuildFile; fileRef = B20000020000000000000001 /* HubNavigationPolicy.swift */; };
+		D10000030000000000000001 /* HubPreferences.swift in Groups */ = {isa = PBXBuildFile; fileRef = B20000030000000000000001 /* HubPreferences.swift */; };
+		D10000040000000000000001 /* HubSettingsView.swift in Groups */ = {isa = PBXBuildFile; fileRef = B20000040000000000000001 /* HubSettingsView.swift */; };
+		D10000050000000000000001 /* HubPopupAndLoginWindows.swift in Groups */ = {isa = PBXBuildFile; fileRef = B20000050000000000000001 /* HubPopupAndLoginWindows.swift */; };
+		D10000060000000000000001 /* HubWebViewController.swift in Groups */ = {isa = PBXBuildFile; fileRef = B20000060000000000000001 /* HubWebViewController.swift */; };
+		D10000070000000000000001 /* HubMainWindowController.swift in Groups */ = {isa = PBXBuildFile; fileRef = B20000070000000000000001 /* HubMainWindowController.swift */; };
+		D10000080000000000000001 /* HubStatusBarController.swift in Groups */ = {isa = PBXBuildFile; fileRef = B20000080000000000000001 /* HubStatusBarController.swift */; };
+		D10000090000000000000001 /* HubMainMenu.swift in Groups */ = {isa = PBXBuildFile; fileRef = B20000090000000000000001 /* HubMainMenu.swift */; };
+		D100000A0000000000000001 /* HubAppDelegate.swift in Groups */ = {isa = PBXBuildFile; fileRef = B200000A0000000000000001 /* HubAppDelegate.swift */; };
+		D100000B0000000000000001 /* main.swift in Groups */ = {isa = PBXBuildFile; fileRef = E20000010000000000000001 /* main.swift */; };
+		D100000C0000000000000001 /* Assets.xcassets in Groups */ = {isa = PBXBuildFile; fileRef = E20000020000000000000001 /* Assets.xcassets */; };
+		D100000D0000000000000001 /* hub.css in Groups */ = {isa = PBXBuildFile; fileRef = B200000B0000000000000001 /* hub.css */; };
+		D100000E0000000000000001 /* hub_preload.js in Groups */ = {isa = PBXBuildFile; fileRef = B200000C0000000000000001 /* hub_preload.js */; };
+		D100000F0000000000000001 /* hub_bridge.js in Groups */ = {isa = PBXBuildFile; fileRef = B200000D0000000000000001 /* hub_bridge.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A30000010000000000000001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A80000010000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A60000010000000000000001;
+			remoteInfo = Messenger;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A20000010000000000000001 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A20000020000000000000001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A20000030000000000000001 /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		A20000040000000000000001 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		A20000050000000000000001 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		A20000060000000000000001 /* PopupWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupWindowController.swift; sourceTree = "<group>"; };
+		A20000070000000000000001 /* LoginWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWindowController.swift; sourceTree = "<group>"; };
+		A20000080000000000000001 /* NavigationPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPolicy.swift; sourceTree = "<group>"; };
+		A20000090000000000000001 /* WebViewConfigurationFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewConfigurationFactory.swift; sourceTree = "<group>"; };
+		A200000A0000000000000001 /* MessengerWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerWebView.swift; sourceTree = "<group>"; };
+		A200000B0000000000000001 /* MessengerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessengerViewController.swift; sourceTree = "<group>"; };
+		A200000C0000000000000001 /* ChatPreviewParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPreviewParser.swift; sourceTree = "<group>"; };
+		A200000D0000000000000001 /* BadgeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeController.swift; sourceTree = "<group>"; };
+		A200000E0000000000000001 /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		A200000F0000000000000001 /* AppPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppPreferences.swift; sourceTree = "<group>"; };
+		A20000100000000000000001 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A20000110000000000000001 /* SettingsWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsWindowController.swift; sourceTree = "<group>"; };
+		A20000120000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A20000130000000000000001 /* messenger.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = messenger.css; sourceTree = "<group>"; };
+		A20000140000000000000001 /* preload.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = preload.js; sourceTree = "<group>"; };
+		A20000150000000000000001 /* bridge.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = bridge.js; sourceTree = "<group>"; };
+		A20000160000000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A20000170000000000000001 /* Messenger.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Messenger.entitlements; sourceTree = "<group>"; };
+		A20000180000000000000001 /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+
+		/* HubCore */
+		B20000010000000000000001 /* HubAppProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubAppProfile.swift; sourceTree = "<group>"; };
+		B20000020000000000000001 /* HubNavigationPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubNavigationPolicy.swift; sourceTree = "<group>"; };
+		B20000030000000000000001 /* HubPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubPreferences.swift; sourceTree = "<group>"; };
+		B20000040000000000000001 /* HubSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubSettingsView.swift; sourceTree = "<group>"; };
+		B20000050000000000000001 /* HubPopupAndLoginWindows.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubPopupAndLoginWindows.swift; sourceTree = "<group>"; };
+		B20000060000000000000001 /* HubWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubWebViewController.swift; sourceTree = "<group>"; };
+		B20000070000000000000001 /* HubMainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubMainWindowController.swift; sourceTree = "<group>"; };
+		B20000080000000000000001 /* HubStatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubStatusBarController.swift; sourceTree = "<group>"; };
+		B20000090000000000000001 /* HubMainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubMainMenu.swift; sourceTree = "<group>"; };
+		B200000A0000000000000001 /* HubAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubAppDelegate.swift; sourceTree = "<group>"; };
+		B200000B0000000000000001 /* hub.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = hub.css; sourceTree = "<group>"; };
+		B200000C0000000000000001 /* hub_preload.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = hub_preload.js; sourceTree = "<group>"; };
+		B200000D0000000000000001 /* hub_bridge.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = hub_bridge.js; sourceTree = "<group>"; };
+
+		/* Marketplace */
+		C20000010000000000000001 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C20000020000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C20000030000000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C20000040000000000000001 /* Marketplace.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Marketplace.entitlements; sourceTree = "<group>"; };
+
+		/* Groups */
+		E20000010000000000000001 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		E20000020000000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E20000030000000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E20000040000000000000001 /* Groups.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Groups.entitlements; sourceTree = "<group>"; };
+
+		/* Tests */
+		A20000200000000000000001 /* NavigationPolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPolicyTests.swift; sourceTree = "<group>"; };
+		A20000210000000000000001 /* ChatPreviewParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPreviewParserTests.swift; sourceTree = "<group>"; };
+		A20000220000000000000001 /* BadgeControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgeControllerTests.swift; sourceTree = "<group>"; };
+		A20000230000000000000001 /* HubNavigationPolicyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HubNavigationPolicyTests.swift; sourceTree = "<group>"; };
+
+		/* Products */
+		A20000300000000000000001 /* Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000310000000000000001 /* MessengerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessengerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000320000000000000001 /* Marketplace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Marketplace.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20000330000000000000001 /* Groups.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Groups.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A40000010000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A40000020000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A40000030000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A40000040000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A50000010000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				A50000020000000000000001 /* Messenger */,
+				B50000010000000000000001 /* HubCore */,
+				C50000010000000000000001 /* Marketplace */,
+				E50000010000000000000001 /* Groups */,
+				A500000B0000000000000001 /* MessengerTests */,
+				A500000C0000000000000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A50000020000000000000001 /* Messenger */ = {
+			isa = PBXGroup;
+			children = (
+				A50000030000000000000001 /* App */,
+				A50000040000000000000001 /* Windows */,
+				A50000050000000000000001 /* WebView */,
+				A50000060000000000000001 /* Notifications */,
+				A50000070000000000000001 /* Settings */,
+				A50000080000000000000001 /* Resources */,
+				A500000A0000000000000001 /* Config */,
+			);
+			path = Messenger;
+			sourceTree = "<group>";
+		};
+		A50000030000000000000001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A20000010000000000000001 /* main.swift */,
+				A20000020000000000000001 /* AppDelegate.swift */,
+				A20000030000000000000001 /* MainMenu.swift */,
+				A20000040000000000000001 /* StatusBarController.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A50000040000000000000001 /* Windows */ = {
+			isa = PBXGroup;
+			children = (
+				A20000050000000000000001 /* MainWindowController.swift */,
+				A20000060000000000000001 /* PopupWindowController.swift */,
+				A20000070000000000000001 /* LoginWindowController.swift */,
+			);
+			path = Windows;
+			sourceTree = "<group>";
+		};
+		A50000050000000000000001 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				A20000080000000000000001 /* NavigationPolicy.swift */,
+				A20000090000000000000001 /* WebViewConfigurationFactory.swift */,
+				A200000A0000000000000001 /* MessengerWebView.swift */,
+				A200000B0000000000000001 /* MessengerViewController.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		A50000060000000000000001 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				A200000C0000000000000001 /* ChatPreviewParser.swift */,
+				A200000D0000000000000001 /* BadgeController.swift */,
+				A200000E0000000000000001 /* NotificationManager.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		A50000070000000000000001 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A200000F0000000000000001 /* AppPreferences.swift */,
+				A20000100000000000000001 /* SettingsView.swift */,
+				A20000110000000000000001 /* SettingsWindowController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A50000080000000000000001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A20000120000000000000001 /* Assets.xcassets */,
+				A50000090000000000000001 /* Scripts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A50000090000000000000001 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				A20000130000000000000001 /* messenger.css */,
+				A20000140000000000000001 /* preload.js */,
+				A20000150000000000000001 /* bridge.js */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		A500000A0000000000000001 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				A20000180000000000000001 /* Base.xcconfig */,
+				A20000160000000000000001 /* Info.plist */,
+				A20000170000000000000001 /* Messenger.entitlements */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		B50000010000000000000001 /* HubCore */ = {
+			isa = PBXGroup;
+			children = (
+				B20000010000000000000001 /* HubAppProfile.swift */,
+				B20000020000000000000001 /* HubNavigationPolicy.swift */,
+				B20000030000000000000001 /* HubPreferences.swift */,
+				B20000040000000000000001 /* HubSettingsView.swift */,
+				B20000050000000000000001 /* HubPopupAndLoginWindows.swift */,
+				B20000060000000000000001 /* HubWebViewController.swift */,
+				B20000070000000000000001 /* HubMainWindowController.swift */,
+				B20000080000000000000001 /* HubStatusBarController.swift */,
+				B20000090000000000000001 /* HubMainMenu.swift */,
+				B200000A0000000000000001 /* HubAppDelegate.swift */,
+				B50000020000000000000001 /* Resources */,
+			);
+			path = HubCore;
+			sourceTree = "<group>";
+		};
+		B50000020000000000000001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B200000B0000000000000001 /* hub.css */,
+				B200000C0000000000000001 /* hub_preload.js */,
+				B200000D0000000000000001 /* hub_bridge.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C50000010000000000000001 /* Marketplace */ = {
+			isa = PBXGroup;
+			children = (
+				C20000010000000000000001 /* main.swift */,
+				C50000020000000000000001 /* Resources */,
+				C50000030000000000000001 /* Config */,
+			);
+			path = Marketplace;
+			sourceTree = "<group>";
+		};
+		C50000020000000000000001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C20000020000000000000001 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C50000030000000000000001 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C20000030000000000000001 /* Info.plist */,
+				C20000040000000000000001 /* Marketplace.entitlements */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		E50000010000000000000001 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				E20000010000000000000001 /* main.swift */,
+				E50000020000000000000001 /* Resources */,
+				E50000030000000000000001 /* Config */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
+		E50000020000000000000001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E20000020000000000000001 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E50000030000000000000001 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				E20000030000000000000001 /* Info.plist */,
+				E20000040000000000000001 /* Groups.entitlements */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		A500000B0000000000000001 /* MessengerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A20000200000000000000001 /* NavigationPolicyTests.swift */,
+				A20000210000000000000001 /* ChatPreviewParserTests.swift */,
+				A20000220000000000000001 /* BadgeControllerTests.swift */,
+				A20000230000000000000001 /* HubNavigationPolicyTests.swift */,
+			);
+			path = MessengerTests;
+			sourceTree = "<group>";
+		};
+		A500000C0000000000000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A20000300000000000000001 /* Messenger.app */,
+				A20000320000000000000001 /* Marketplace.app */,
+				A20000330000000000000001 /* Groups.app */,
+				A20000310000000000000001 /* MessengerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A60000010000000000000001 /* Messenger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90000020000000000000001 /* Build configuration list for PBXNativeTarget "Messenger" */;
+			buildPhases = (
+				A70000010000000000000001 /* Sources */,
+				A40000010000000000000001 /* Frameworks */,
+				A70000020000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Messenger;
+			productName = Messenger;
+			productReference = A20000300000000000000001 /* Messenger.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A60000030000000000000001 /* Marketplace */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90000040000000000000001 /* Build configuration list for PBXNativeTarget "Marketplace" */;
+			buildPhases = (
+				A70000040000000000000001 /* Sources */,
+				A40000030000000000000001 /* Frameworks */,
+				A70000050000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Marketplace;
+			productName = Marketplace;
+			productReference = A20000320000000000000001 /* Marketplace.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A60000040000000000000001 /* Groups */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90000050000000000000001 /* Build configuration list for PBXNativeTarget "Groups" */;
+			buildPhases = (
+				A70000060000000000000001 /* Sources */,
+				A40000040000000000000001 /* Frameworks */,
+				A70000070000000000000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Groups;
+			productName = Groups;
+			productReference = A20000330000000000000001 /* Groups.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A60000020000000000000001 /* MessengerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90000030000000000000001 /* Build configuration list for PBXNativeTarget "MessengerTests" */;
+			buildPhases = (
+				A70000030000000000000001 /* Sources */,
+				A40000020000000000000001 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA0000010000000000000001 /* PBXTargetDependency */,
+			);
+			name = MessengerTests;
+			productName = MessengerTests;
+			productReference = A20000310000000000000001 /* MessengerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A80000010000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					A60000010000000000000001 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					A60000020000000000000001 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = A60000010000000000000001;
+					};
+					A60000030000000000000001 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					A60000040000000000000001 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+				};
+			};
+			buildConfigurationList = A90000010000000000000001 /* Build configuration list for PBXProject "Messenger" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A50000010000000000000001;
+			productRefGroup = A500000C0000000000000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A60000010000000000000001 /* Messenger */,
+				A60000030000000000000001 /* Marketplace */,
+				A60000040000000000000001 /* Groups */,
+				A60000020000000000000001 /* MessengerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A70000020000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000120000000000000001 /* Assets.xcassets in Resources */,
+				A10000130000000000000001 /* messenger.css in Resources */,
+				A10000140000000000000001 /* preload.js in Resources */,
+				A10000150000000000000001 /* bridge.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A70000050000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B100000C0000000000000001 /* Assets.xcassets in Marketplace */,
+				B100000D0000000000000001 /* hub.css in Marketplace */,
+				B100000E0000000000000001 /* hub_preload.js in Marketplace */,
+				B100000F0000000000000001 /* hub_bridge.js in Marketplace */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A70000070000000000000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D100000C0000000000000001 /* Assets.xcassets in Groups */,
+				D100000D0000000000000001 /* hub.css in Groups */,
+				D100000E0000000000000001 /* hub_preload.js in Groups */,
+				D100000F0000000000000001 /* hub_bridge.js in Groups */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A70000010000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000010000000000000001 /* main.swift in Sources */,
+				A10000020000000000000001 /* AppDelegate.swift in Sources */,
+				A10000030000000000000001 /* MainMenu.swift in Sources */,
+				A10000040000000000000001 /* StatusBarController.swift in Sources */,
+				A10000050000000000000001 /* MainWindowController.swift in Sources */,
+				A10000060000000000000001 /* PopupWindowController.swift in Sources */,
+				A10000070000000000000001 /* LoginWindowController.swift in Sources */,
+				A10000080000000000000001 /* NavigationPolicy.swift in Sources */,
+				A10000090000000000000001 /* WebViewConfigurationFactory.swift in Sources */,
+				A100000A0000000000000001 /* MessengerWebView.swift in Sources */,
+				A100000B0000000000000001 /* MessengerViewController.swift in Sources */,
+				A100000C0000000000000001 /* ChatPreviewParser.swift in Sources */,
+				A100000D0000000000000001 /* BadgeController.swift in Sources */,
+				A100000E0000000000000001 /* NotificationManager.swift in Sources */,
+				A100000F0000000000000001 /* AppPreferences.swift in Sources */,
+				A10000100000000000000001 /* SettingsView.swift in Sources */,
+				A10000110000000000000001 /* SettingsWindowController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A70000040000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B10000010000000000000001 /* HubAppProfile.swift in Marketplace */,
+				B10000020000000000000001 /* HubNavigationPolicy.swift in Marketplace */,
+				B10000030000000000000001 /* HubPreferences.swift in Marketplace */,
+				B10000040000000000000001 /* HubSettingsView.swift in Marketplace */,
+				B10000050000000000000001 /* HubPopupAndLoginWindows.swift in Marketplace */,
+				B10000060000000000000001 /* HubWebViewController.swift in Marketplace */,
+				B10000070000000000000001 /* HubMainWindowController.swift in Marketplace */,
+				B10000080000000000000001 /* HubStatusBarController.swift in Marketplace */,
+				B10000090000000000000001 /* HubMainMenu.swift in Marketplace */,
+				B100000A0000000000000001 /* HubAppDelegate.swift in Marketplace */,
+				B100000B0000000000000001 /* main.swift in Marketplace */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A70000060000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D10000010000000000000001 /* HubAppProfile.swift in Groups */,
+				D10000020000000000000001 /* HubNavigationPolicy.swift in Groups */,
+				D10000030000000000000001 /* HubPreferences.swift in Groups */,
+				D10000040000000000000001 /* HubSettingsView.swift in Groups */,
+				D10000050000000000000001 /* HubPopupAndLoginWindows.swift in Groups */,
+				D10000060000000000000001 /* HubWebViewController.swift in Groups */,
+				D10000070000000000000001 /* HubMainWindowController.swift in Groups */,
+				D10000080000000000000001 /* HubStatusBarController.swift in Groups */,
+				D10000090000000000000001 /* HubMainMenu.swift in Groups */,
+				D100000A0000000000000001 /* HubAppDelegate.swift in Groups */,
+				D100000B0000000000000001 /* main.swift in Groups */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A70000030000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A10000200000000000000001 /* NavigationPolicyTests.swift in Sources */,
+				A10000210000000000000001 /* ChatPreviewParserTests.swift in Sources */,
+				A10000220000000000000001 /* BadgeControllerTests.swift in Sources */,
+				A10000230000000000000001 /* HubNavigationPolicyTests.swift in Sources */,
+				A10000240000000000000001 /* HubAppProfile.swift in Tests */,
+				A10000250000000000000001 /* HubNavigationPolicy.swift in Tests */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AA0000010000000000000001 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A60000010000000000000001 /* Messenger */;
+			targetProxy = A30000010000000000000001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		AB0000010000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20000180000000000000001 /* Base.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		AB0000020000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20000180000000000000001 /* Base.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		AB0000030000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Messenger/Config/Messenger.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Messenger/Config/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).Messenger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		AB0000040000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Messenger/Config/Messenger.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Messenger/Config/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).Messenger";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		AB0000070000000000000001 /* Debug (Marketplace) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Marketplace/Config/Marketplace.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Marketplace/Config/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).Marketplace";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		AB0000080000000000000001 /* Release (Marketplace) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Marketplace/Config/Marketplace.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Marketplace/Config/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).Marketplace";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		AB0000090000000000000001 /* Debug (Groups) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Groups/Config/Groups.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Groups/Config/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).Groups";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Debug;
+		};
+		AB00000A0000000000000001 /* Release (Groups) */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Groups/Config/Groups.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Groups/Config/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).Groups";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+			};
+			name = Release;
+		};
+		AB0000050000000000000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).MessengerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Messenger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Messenger";
+			};
+			name = Debug;
+		};
+		AB0000060000000000000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).MessengerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Messenger.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Messenger";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A90000010000000000000001 /* Build configuration list for PBXProject "Messenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0000010000000000000001 /* Debug */,
+				AB0000020000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A90000020000000000000001 /* Build configuration list for PBXNativeTarget "Messenger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0000030000000000000001 /* Debug */,
+				AB0000040000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A90000040000000000000001 /* Build configuration list for PBXNativeTarget "Marketplace" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0000070000000000000001 /* Debug (Marketplace) */,
+				AB0000080000000000000001 /* Release (Marketplace) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A90000050000000000000001 /* Build configuration list for PBXNativeTarget "Groups" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0000090000000000000001 /* Debug (Groups) */,
+				AB00000A0000000000000001 /* Release (Groups) */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A90000030000000000000001 /* Build configuration list for PBXNativeTarget "MessengerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0000050000000000000001 /* Debug */,
+				AB0000060000000000000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A80000010000000000000001 /* Project object */;
+}
